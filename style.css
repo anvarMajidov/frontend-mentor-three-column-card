@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container {
+  margin: 5.87em auto;
+  width: 87.2%;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 3.2em;
+}
+
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+}
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card .heading {
+  padding-top: 0.82em;
+  font-size: 2.67rem;
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+.card p {
+  padding: 1.67em 0;
+  line-height: 25px;
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card a {
+  background-color: hsl(0, 0%, 95%);
+  padding: 1em 2.13em;
+  border-radius: 24px;
+  font-family: "Lexend Deca";
+
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card1 a {
+  color: hsl(31, 77%, 52%);
+}
+
+.card2 a {
+  color: hsl(184, 100%, 22%);
+}
+.card3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+.card a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  box-shadow: 0 0 0 2px inset;
+}
+
+/*For desktop*/
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+
+    margin: 11.4em auto 0;
+  }
+
+  .card {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card p {
+    padding: 1.67em 0 5.53em 0;
+  }
+
+  .card a {
+    margin-top: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 63.82%;
+  }
+}
